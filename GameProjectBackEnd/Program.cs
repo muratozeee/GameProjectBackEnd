@@ -23,8 +23,16 @@
 
 
             gamerManager.NewSıgnUp(gamer1, gamer1Verification);
+           
+            
             gamerManager.Update(gamer2, gamer2Verification);
+            
+            
             gamerManager.Delete(gamer3, gamer3Verification);
+
+            govermentManager.Verification(gamer1, gamer1Verification);
+
+
             gamerManager.Gamerİnfo(gamerlist, gamerinfo);   
 
 
