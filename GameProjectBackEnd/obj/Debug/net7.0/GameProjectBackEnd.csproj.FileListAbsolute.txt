@@ -1,0 +1,15 @@
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\bin\Debug\net7.0\GameProjectBackEnd.exe
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\bin\Debug\net7.0\GameProjectBackEnd.deps.json
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\bin\Debug\net7.0\GameProjectBackEnd.runtimeconfig.json
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\bin\Debug\net7.0\GameProjectBackEnd.dll
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\bin\Debug\net7.0\GameProjectBackEnd.pdb
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.csproj.AssemblyReference.cache
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.AssemblyInfoInputs.cache
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.AssemblyInfo.cs
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.csproj.CoreCompileInputs.cache
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.dll
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\refint\GameProjectBackEnd.dll
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.pdb
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\GameProjectBackEnd.genruntimeconfig.cache
+C:\Users\murat\source\repos\GameProjectBackEnd\GameProjectBackEnd\obj\Debug\net7.0\ref\GameProjectBackEnd.dll
