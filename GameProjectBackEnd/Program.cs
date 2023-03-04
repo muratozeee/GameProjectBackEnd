@@ -33,10 +33,33 @@
             govermentManager.Verification(gamer1, gamer1Verification);
 
 
-            gamerManager.Gamerİnfo(gamerlist, gamerinfo);   
+            gamerManager.Gamerİnfo(gamerlist, gamerinfo);
 
 
-           
+            Console.WriteLine("-------------------Games---------------------------------");
+            GameSale gamesSale = new GameSale();
+
+
+            GameSale game1 = new GameSale() {GameName="Legue Of Legend",GamePrice="10$",GameMemory="16.7 GB" };
+            GameSale game2 = new GameSale() { GameName = "Metin 2", GamePrice = "5$", GameMemory = "4.3 GB" };
+            GameSale game3 = new GameSale() { GameName = "Wolfteam", GamePrice = "3$", GameMemory = "11.5 GB" };
+            GameSale game4 = new GameSale() { GameName = "Skyrim", GamePrice = "15$", GameMemory = "35 GB" };
+
+            List<GameSale> gamesInfo = new List<GameSale>() {game1,game2,game3,game4 };
+
+            gamesSale.GameInfo(gamesInfo);
+
+            gamesSale.GamesSale(gamer1,game2);
+
+
+
+
+
+
+
+
+
+
 
 
 
