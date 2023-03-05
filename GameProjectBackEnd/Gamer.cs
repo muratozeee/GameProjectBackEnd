@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GameProjectBackEnd
 {
-     interface IGamer
+    class Gamer
     {
         public string NickName { get; set; }
         public string Password { get; set; }

@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameProjectBackEnd
 {
-    class GameSale : IGamer
+    class GameSale : Gamer
     {
-        public string NickName { get; set; }
-        public string Password { get; set; }
-        public string E_Mail { get; set; }
+       
 
         public string GameName { get; set; }
         public  double GamePrice { get; set; }
@@ -31,11 +29,11 @@ namespace GameProjectBackEnd
         }
 
 
-        public void GamesSale(IGamer gamer,GameSale gameSale)
+        public void GamesSale(Gamer gamer,GameSale gameSale)
         {
             Console.WriteLine("         ");
             Console.WriteLine(" *Games Sale*");
-            Console.WriteLine("Game Name={0} was buyed by NickName={1} ",gameSale.GameName,gamer.NickName);
+            Console.WriteLine($"Game Name={gameSale.GameName} was buyed by NickName= {gamer.NickName}");
 
         }
 

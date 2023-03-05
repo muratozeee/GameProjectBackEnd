@@ -6,13 +6,11 @@ using System.Threading.Tasks;
 
 namespace GameProjectBackEnd
 {
-    class GamerManager : IGamer
+    class GamerManager : Gamer
     {
-        public string NickName { get; set; }
-        public string Password { get ; set ; }
-        public string E_Mail { get ; set; }
+ 
 
-        public void NewSıgnUp(IGamer gamer,e_GovermentManager e_goverment)
+        public void NewSıgnUp(Gamer gamer,e_GovermentManager e_goverment)
         {
             Console.WriteLine("      New Sign Up");
 
@@ -24,7 +22,7 @@ namespace GameProjectBackEnd
 
            
         }
-        public void Update(IGamer gamer, e_GovermentManager e_goverment)
+        public void Update(Gamer gamer, e_GovermentManager e_goverment)
         {
             Console.WriteLine("******Updated*******");
             Console.WriteLine("Tc= {0} Name={1} Gamer  Updated the own informations. ",e_goverment.TcId,e_goverment.Name);
@@ -39,7 +37,7 @@ namespace GameProjectBackEnd
 
         }
 
-        public void Delete(IGamer gamer, e_GovermentManager e_goverment) {
+        public void Delete(Gamer gamer, e_GovermentManager e_goverment) {
 
             Console.WriteLine("             Delete");
 
@@ -47,7 +45,7 @@ namespace GameProjectBackEnd
             Console.WriteLine("-------------");
         
         }
-        public void Gamerİnfo(List<IGamer> gamers,List<e_GovermentManager> goverments)
+        public void Gamerİnfo(List<Gamer> gamers,List<e_GovermentManager> goverments)
         {
             int i = 0;
             Console.WriteLine("    ");
