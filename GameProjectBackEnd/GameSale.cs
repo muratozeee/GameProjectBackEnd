@@ -13,7 +13,7 @@ namespace GameProjectBackEnd
         public string E_Mail { get; set; }
 
         public string GameName { get; set; }
-        public  string GamePrice { get; set; }
+        public  double GamePrice { get; set; }
         public string  GameMemory { get; set; }
         
         public void GameInfo(List<GameSale> games)
@@ -38,5 +38,7 @@ namespace GameProjectBackEnd
             Console.WriteLine("Game Name={0} was buyed by NickName={1} ",gameSale.GameName,gamer.NickName);
 
         }
+
+
     }
 }

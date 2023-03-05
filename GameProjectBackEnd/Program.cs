@@ -40,16 +40,88 @@
             GameSale gamesSale = new GameSale();
 
 
-            GameSale game1 = new GameSale() {GameName="Legue Of Legend",GamePrice="10$",GameMemory="16.7 GB" };
-            GameSale game2 = new GameSale() { GameName = "Metin 2", GamePrice = "5$", GameMemory = "4.3 GB" };
-            GameSale game3 = new GameSale() { GameName = "Wolfteam", GamePrice = "3$", GameMemory = "11.5 GB" };
-            GameSale game4 = new GameSale() { GameName = "Skyrim", GamePrice = "15$", GameMemory = "35 GB" };
+            GameSale game1 = new GameSale() {GameName="Legue Of Legend",GamePrice=10,GameMemory="16.7 GB" };
+            GameSale game2 = new GameSale() { GameName = "Metin 2", GamePrice = 5, GameMemory = "4.3 GB" };
+            GameSale game3 = new GameSale() { GameName = "Wolfteam", GamePrice = 3, GameMemory = "11.5 GB" };
+            GameSale game4 = new GameSale() { GameName = "Skyrim", GamePrice = 15, GameMemory = "35 GB" };
+           
+    
+            
 
             List<GameSale> gamesInfo = new List<GameSale>() {game1,game2,game3,game4 };
 
             gamesSale.GameInfo(gamesInfo);
 
             gamesSale.GamesSale(gamer1,game2);
+
+            
+
+
+
+            CampaignManager campaign1 = new CampaignManager() { CampaignName = "Students Campaign Until September until %30 discount campaign..! Don't Missed İt",
+            CampaignRate=30};
+            CampaignManager campaing2 = new CampaignManager() { CampaignName = "Teachers Campaign valid for 30 days %25 Discount Campaign..!  ",CampaignRate=25 };
+
+            CampaignManager campaign3 = new CampaignManager() { CampaignName="Polices Campaign Valid for 20 days %20 Discount Campaign..! They are working for our safety..!",CampaignRate=20 };
+          
+            List<CampaignManager> campaigns = new List<CampaignManager>() { campaign1,campaing2,campaign3 };
+            CampaignManager campaign = new CampaignManager();
+
+          
+            campaign.CampaignEntry(campaigns,gamesInfo);
+
+            Console.WriteLine("*********************************");
+            campaign.CampaignEntity(campaign1);
+
+            campaign.CampaignUpdate(campaing2);
+
+            campaign.CampaignDelete(campaign3);
+
+
+
+
+                Console.WriteLine("--------------Campaign Entegration-----");
+            CampaignEntegrationManager campaignEntegration = new CampaignEntegrationManager();
+
+            //we use the status for selecting.And we can see the display..!
+
+            campaignEntegration.CampaignEntegration(gamer2Verification);
+
+            campaignEntegration.CampaignEntegration(gamer1Verification);
+
+            campaignEntegration.CampaignEntegration(gamer3Verification);
+            
+            //This one for showing different status for campaign.
+            e_GovermentManager gamer4Verification = new e_GovermentManager { TcId = "58551214781", Name = "Faruk", Surname = "Coskun", BirthOfDate = "15.10.1988", Status = "doctor" };
+
+
+            campaignEntegration.CampaignEntegration(gamer4Verification);
+
+
+
+            Console.WriteLine("  ");
+
+            Console.WriteLine("--- Discount of Games---");
+
+            GamesPriceEntegrationManager gamesPriceEntegrationManager = new GamesPriceEntegrationManager();
+
+            gamesPriceEntegrationManager.StudentDiscount(gamesInfo);
+
+            gamesPriceEntegrationManager.TeacherDiscount(gamesInfo);
+
+            gamesPriceEntegrationManager.PoliceDiscount(gamesInfo);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
