@@ -59,7 +59,7 @@
 
 
             CampaignManager campaign1 = new CampaignManager() { CampaignName = "Students Campaign Until September until %30 discount campaign..! Don't Missed İt",
-            CampaignRate=30};
+            CampaignRate=50};
             CampaignManager campaing2 = new CampaignManager() { CampaignName = "Teachers Campaign valid for 30 days %25 Discount Campaign..!  ",CampaignRate=25 };
 
             CampaignManager campaign3 = new CampaignManager() { CampaignName="Polices Campaign Valid for 20 days %20 Discount Campaign..! They are working for our safety..!",CampaignRate=20 };
@@ -105,11 +105,11 @@
 
             GamesPriceEntegrationManager gamesPriceEntegrationManager = new GamesPriceEntegrationManager();
 
-            gamesPriceEntegrationManager.StudentDiscount(gamesInfo);
+            gamesPriceEntegrationManager.StudentDiscount(gamesInfo,campaign1);
 
-            gamesPriceEntegrationManager.TeacherDiscount(gamesInfo);
+            gamesPriceEntegrationManager.TeacherDiscount(gamesInfo,campaing2);
 
-            gamesPriceEntegrationManager.PoliceDiscount(gamesInfo);
+            gamesPriceEntegrationManager.PoliceDiscount(gamesInfo,campaign3);
 
 
 
