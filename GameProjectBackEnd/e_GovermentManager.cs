@@ -22,7 +22,7 @@ namespace GameProjectBackEnd
             Console.WriteLine("           Verification");
 
             Console.WriteLine($"Tc={e_Goverment.TcId}  ,  Name={e_Goverment.Name} {e_Goverment.Surname} gamer was confirmed Succesfully..!");
-            Console.WriteLine("NickName={0} ",gamers.NickName);
+            Console.WriteLine($"NickName={gamers.NickName} ");
         }
 
 

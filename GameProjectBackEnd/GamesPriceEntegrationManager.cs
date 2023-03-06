@@ -15,7 +15,7 @@ namespace GameProjectBackEnd
 
             foreach (var studentSale in gameSalesstudent)
             {
-                Console.WriteLine("Game Name={0} * Game Price={1} * After Discount={2} Discount Type Student %30", studentSale.GameName, studentSale.GamePrice,studentSale.GamePrice *(1-(campaign.CampaignRate/100)));
+                Console.WriteLine($"Game Name={studentSale.GameName} * Game Price={studentSale.GamePrice} * After Discount={studentSale.GamePrice * (1 - (campaign.CampaignRate / 100))} Discount Type Student %30");
             }
 
         }
@@ -28,7 +28,7 @@ namespace GameProjectBackEnd
            
             foreach (var teacherSale in gameSalesTeacher)
             {
-                Console.WriteLine("Game Name={0} * Game Price={1} * After Discount={2} Discount Type Teacher %25", teacherSale.GameName, teacherSale.GamePrice, teacherSale.GamePrice * (1 - (campaign.CampaignRate / 100)));
+                Console.WriteLine($"Game Name={teacherSale.GameName} * Game Price={teacherSale.GamePrice} * After Discount={teacherSale.GamePrice * (1 - (campaign.CampaignRate / 100))} Discount Type Teacher %25");
             }
         }
         public void PoliceDiscount(List<GameSale> gameSalesPolice, CampaignManager campaign)
@@ -38,7 +38,7 @@ namespace GameProjectBackEnd
             
             foreach (var policeSale in gameSalesPolice)
             {
-                Console.WriteLine("Game Name={0} * Game Price={1} * After Discount={2} Discount Type Police %20", policeSale.GameName, policeSale.GamePrice,policeSale.GamePrice * (1 - (campaign.CampaignRate / 100)));
+                Console.WriteLine($"Game Name={policeSale.GameName} * Game Price={policeSale.GamePrice} * After Discount={policeSale.GamePrice * (1 - (campaign.CampaignRate / 100))} Discount Type Police %20");
             }
         }
 

@@ -25,13 +25,13 @@ namespace GameProjectBackEnd
         public void Update(Gamer gamer, e_GovermentManager e_goverment)
         {
             Console.WriteLine("******Updated*******");
-            Console.WriteLine("Tc= {0} Name={1} Gamer  Updated the own informations. ",e_goverment.TcId,e_goverment.Name);
+            Console.WriteLine($"Tc= {e_goverment.TcId} Name={e_goverment.Name} Gamer  Updated the own informations. ");
 
             gamer.NickName = "Dark";
             gamer.Password = "14454dsa";
             gamer.E_Mail = "coskun.gar@gmail.com";
 
-            Console.WriteLine("New NickName={0}        New Pasword={1}      New E-Mail={2}",gamer.NickName,gamer.Password,gamer.E_Mail);
+            Console.WriteLine($"New NickName={gamer.NickName}        New Pasword={gamer.Password}      New E-Mail={gamer.E_Mail}");
             Console.WriteLine("------------------");
 
 
@@ -41,7 +41,7 @@ namespace GameProjectBackEnd
 
             Console.WriteLine("             Delete");
 
-            Console.WriteLine("Tc={0} Name={1} Gamer Deleted tha account Nick Name={2}", e_goverment.TcId, e_goverment.Name,gamer.NickName);
+            Console.WriteLine($"Tc={e_goverment.TcId} Name={e_goverment.Name} Gamer Deleted tha account Nick Name={gamer.NickName}");
             Console.WriteLine("-------------");
         
         }
@@ -53,11 +53,11 @@ namespace GameProjectBackEnd
 
             foreach (var a in gamers)
             {
-                Console.WriteLine("NickName={0} *** Password={1} *** E-Mail={2}",a.NickName,a.Password,a.E_Mail);
+                Console.WriteLine($"NickName={a.NickName} *** Password={a.Password} *** E-Mail={a.E_Mail}");
               
-                Console.WriteLine("Tc=" + goverments[i].TcId);
-                Console.WriteLine("Name= {0}  Surname= {1}", goverments[i].Name, goverments[i].Surname);
-                Console.WriteLine("Date of Birth= {0} Status= {1}", goverments[i].BirthOfDate, goverments[i].Status);
+                Console.WriteLine($"Tc={goverments[i].TcId}" );
+                Console.WriteLine($"Name= {goverments[i].Name}  Surname= {goverments[i].Surname}");
+                Console.WriteLine($"Date of Birth= {goverments[i].BirthOfDate} Status= {goverments[i].Status}");
                 i++;
                 Console.WriteLine("*********************");
 

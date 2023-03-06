@@ -16,18 +16,18 @@ namespace GameProjectBackEnd
 
         public void CampaignEntity(CampaignManager campaign)
         {
-            Console.WriteLine("{0} Which was Added..!",campaign.CampaignName);
+            Console.WriteLine($"{campaign.CampaignName} Which was Added..!");
         }
 
         public void CampaignDelete(CampaignManager campaign)
         {
 
-            Console.WriteLine("{0} Which was Deleted..!", campaign.CampaignName);
+            Console.WriteLine($"{campaign.CampaignName} Which was Deleted..!" );
         }
         public void CampaignUpdate(CampaignManager campaign)
         {
 
-            Console.WriteLine("{0} Which was Updated..!", campaign.CampaignName);
+            Console.WriteLine($"{campaign.CampaignName} Which was Updated..!");
         }
 
         public void CampaignEntry(List<CampaignManager> campaigns,List<GameSale> games)
@@ -43,7 +43,7 @@ namespace GameProjectBackEnd
             foreach (var gamess in games)
             {
                 Console.WriteLine("********Games And Price*********");
-                Console.WriteLine("Game= {0}      Price= {1}$",gamess.GameName,gamess.GamePrice);
+                Console.WriteLine($"Game= {gamess.GameName}      Price= {gamess.GamePrice}");
             }
         }
 

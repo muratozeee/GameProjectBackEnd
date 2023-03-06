@@ -22,7 +22,7 @@ namespace GameProjectBackEnd
             foreach (var products in games)
 
             {
-                Console.WriteLine("Game Name={0} * Game Price={1} * Game Memory={2} *",products.GameName,products.GamePrice,products.GameMemory);
+                Console.WriteLine($"Game Name={products.GameName} * Game Price={products.GamePrice} * Game Memory={products.GameMemory} *");
 
             }
 
