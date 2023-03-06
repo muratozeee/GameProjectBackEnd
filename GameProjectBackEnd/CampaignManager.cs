@@ -8,12 +8,14 @@ namespace GameProjectBackEnd
 {
      class CampaignManager:GameSale
     {
+
+        //we create the properties for Campaing
         public string CampaignName { get; set; }
 
         public double CampaignRate { get; set; }
 
 
-
+        //We create the methods for CampaignEntry,Delete,Update Then We listed them in Dislplay...!
         public void CampaignEntity(CampaignManager campaign)
         {
             Console.WriteLine($"{campaign.CampaignName} Which was Added..!");

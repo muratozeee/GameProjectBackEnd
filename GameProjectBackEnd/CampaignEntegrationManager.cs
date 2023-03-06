@@ -11,6 +11,7 @@ namespace GameProjectBackEnd
         GameSale gameSale=new GameSale();
         public void CampaignEntegration(e_GovermentManager gamers)
         {
+            //We are controlling which type of jop and you can use or cannot...
             if (gamers.Status == "Student")
             {
                 Console.WriteLine("You can Use Student Campaign..!");

@@ -8,6 +8,8 @@ namespace GameProjectBackEnd
 {
      class GamesPriceEntegrationManager:GameSale
     {
+
+        //Students  entegrate with student used the List and Campaign manager Class..! 
         public void StudentDiscount(List<GameSale> gameSalesstudent,CampaignManager campaign)
         {
             Console.WriteLine("________________________________");
@@ -16,6 +18,7 @@ namespace GameProjectBackEnd
             foreach (var studentSale in gameSalesstudent)
             {
                 Console.WriteLine($"Game Name={studentSale.GameName} * Game Price={studentSale.GamePrice} * After Discount={studentSale.GamePrice * (1 - (campaign.CampaignRate / 100))} Discount Type Student %30");
+           //WE can see in display which status how much game after discount and before discount to take information in display...
             }
 
         }

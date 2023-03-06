@@ -9,7 +9,7 @@ namespace GameProjectBackEnd
     class GamerManager : Gamer
     {
  
-
+        //we Manage the Gamers Methods in this class and we are showing in Display
         public void NewSıgnUp(Gamer gamer,e_GovermentManager e_goverment)
         {
             Console.WriteLine("      New Sign Up");
@@ -45,6 +45,8 @@ namespace GameProjectBackEnd
             Console.WriteLine("-------------");
         
         }
+
+        //We Listed all gamers with informations and from e-goverment..!
         public void Gamerİnfo(List<Gamer> gamers,List<e_GovermentManager> goverments)
         {
             int i = 0;
